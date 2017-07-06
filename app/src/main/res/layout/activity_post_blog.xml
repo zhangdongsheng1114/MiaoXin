@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_blog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tarena.miaoxin.ui.ui.ui.PostBlogActivity">
+
+    <EditText
+        android:id="@+id/et_postblog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/blog_content_shape"
+        android:gravity="top"
+        android:hint="这一刻的想法..."
+        android:lines="6"
+        android:maxLines="6"
+        android:padding="5dp"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_postblog_imagecontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_postblog_blogimg0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/login_acount_shape"
+                android:padding="3dp"
+                android:src="@mipmap/login_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_postblog_delimg0"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_delete"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_postblog_blogimg1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/login_acount_shape"
+                android:padding="3dp"
+                android:src="@mipmap/login_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_postblog_delimg1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_delete"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_postblog_blogimg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/login_acount_shape"
+                android:padding="3dp"
+                android:src="@mipmap/login_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_postblog_delimg2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_delete"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_postblog_blogimg3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/login_acount_shape"
+                android:padding="3dp"
+                android:src="@mipmap/login_icon"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_postblog_delimg3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_delete"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_postblog_imagenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:text="   "
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/sek_postblog_progressbar"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:visibility="visible"
+            android:layout_width="200dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight="2"
+        android:gravity="bottom">
+
+        <ImageButton
+            android:id="@+id/btn_postblog_plus"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/login_acount_shape"
+            android:src="@mipmap/ic_plus" />
+
+        <Button
+            android:id="@+id/btn_postblog_picture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_chat_add_picture_selector"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_postblog_camera"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_chat_add_camera_selector"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_postblog_location"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_chat_add_location_selector"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>
